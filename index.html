@@ -1,0 +1,329 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>OhioNET/PALNI EZproxy Webinar</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+
+		<!-- Theme used for slides -->
+		<link rel="stylesheet" href="css/theme/moon.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<!-- ----------------------------------------------------
+				SECTION - INTRODUCTION
+				---------------------------------------------------- -->
+
+				<section data-transition="slide">
+					<h2>OhioNET/PALNI EZPROXY Service</h2>
+					<br/>
+					<small>Derek Zoladz, MLIS :: Library Systems Analyst</small>
+					<small>derekz@ohionet.org :: <a>https://dzoladz.github.io/palni-ezproxy-webinar</a></small>
+				</section>
+
+				<section data-transition="slide">
+					<h2>Experience</h2>
+					<p class="fragment fade-up">Manage 60+ Instances</p>
+					<p class="fragment fade-up">Private & Public Academics, Medical & Law Libraries</p>
+					<p class="fragment fade-up">Integrations (LDAP, CAS, etc.)</p>
+					<aside class="notes">
+						Notes:
+					</aside>
+				</section>
+
+				<section data-markdown>
+					| PALNI LIBRARIES |    |
+            		| ------------ | --------------- |
+            		| Marian University | Hanover College |
+            		| St. Meinrad Seminary | Oakland City University |
+					| DePauw University | Wabash College |
+					| Taylor University | Christian Theological |
+					| Trine University | Anabaptist Mennonite |
+					| Concordia Theological | Ancilla College |
+					| Manchester University |  |
+                </section>
+
+				<!-- ----------------------------------------------------
+				SECTION - OVERVIEW
+				---------------------------------------------------- -->
+
+				<section>
+					<h1>Overview</h1>
+					<small>Components: Hosted Service, Setup, Reporting</small>
+				</section>
+
+				<section data-transition="slide">
+					<h2>Hosted Service</h2>
+					<p class="fragment fade-up">Server Provisioning</p>
+					<p class="fragment fade-down">IP Allocation</p>
+					<p class="fragment fade-left">Install EZproxy Application</p>
+					<p class="fragment fade-right">Configure Application</p>
+					<p class="fragment fade-left">Configure Authentication</p>
+					<p class="fragment fade-down">Personalization</p>
+					<aside class="notes">
+						Notes:
+					</aside>
+				</section>
+
+				<section data-transition="slide">
+					<p>All ongoing configuration and maintenance requests as your needs evolve</p>
+					<aside class="notes">
+						Notes:
+					</aside>
+				</section>
+
+				<section data-transition="slide">
+					<h2>Behind the Scenes</h2>
+					<p class="fragment">Daily monitoring of server-level activity</p>
+					<p class="fragment">Daily monitoring of anomalous proxy activity</p>
+					<p class="fragment">Renewing SSL certificates to ensure secure HTTPS</p>
+					<p class="fragment">Managing data center environment</p>
+					<p class="fragment">Handle application version upgrades</p>
+					<p class="fragment">Background updates to support platform changes</p>
+					<p class="fragment">Active monitoring of mailing lists, vendors, etc...</p>
+					<aside class="notes">
+						Notes:
+					</aside>
+				</section>
+
+				<!-- ----------------------------------------------------
+				SECTION - SUPPORT
+				---------------------------------------------------- -->
+
+				<section data-transition="slide">
+					<h2>Support</h2>
+					<p class="fragment">All you need to do is get in contact us with any additions, deletions, and changes.</p><br>
+					<p class="fragment fade-up">PALNI Support Form<br>
+					<small>We'll take care of it, normally the same day</small></p>
+					<aside class="notes">
+						Notes:
+					</aside>
+				</section>
+
+				<section data-transition="slide">
+					<p>HOWEVER: I encourage you forward anything you receive from a vendor to us.</p>
+					<aside class="notes">
+						Notes:
+					</aside>
+				</section>
+
+				<!-- ----------------------------------------------------
+				SECTION - IMPLEMENTATION
+				---------------------------------------------------- -->
+
+				<section>
+					<h1>IMPLEMENTATION</h1>
+					<small>Initial Setup, Third-Party IP Registration, Test & Troubleshoot</small>
+				</section>
+
+				<section>
+					<h2>What's needed for setup?</h2>
+					<p class="fragment fade-left">Primary Project Contact & IT Partner</p>
+					<p class="fragment fade-right">Campus IP Range</p>
+					<p class="fragment fade-down">List of Subscription Resources</p>
+				</section>
+
+				<section data-transition="slide">
+					<h2>Authentication</h2>
+					<p class="fragment fade-down">SAML-based (Shibboleth, ADFS, Azure AD)<br>
+					<small class="fragment fade-in-then-out">Azure AD Premium 1 or E3 Subscription</small></p>
+					<p class="fragment fade-left">LDAP</p>
+					<p class="fragment fade-right">CAS</p>
+					<p class="fragment fade-uo">Plain Text File</p>
+					<aside class="notes">
+						Notes:
+					</aside>
+				</section>
+
+				<section data-transition="slide" data-markdown>
+					## **Timeframe** | **6-8 Weeks**
+
+					|           |                    |
+					| ----------| ----------------------------- |
+					| 3-4 weeks | Install & Configure Resources |
+					|			| Share proxy IP with vendors |
+					| 2 weeks | Establish Authentication |
+					| 1-2 weeks | Testing and Troubleshooting |
+				</section>
+
+				<section data-transition="slide">
+					<h2>What you would need to do?</h2>
+					<p class="fragment fade-left">Contact subscription resource vendors</p>
+					<p class="fragment fade-right">Provide campus logos & branding</p>
+					<p class="fragment fade-up">IT Partner: authentication, firewalls, NAT</p>
+					<p class="fragment fade-up">Prepend your EZproxy prefix to subscription URLs</p>
+					<p class="fragment fade-down">Test setup and resources</p>
+					<p class="fragment fade-left">Communicate with stakeholders</p>
+					<aside class="notes">
+						Notes:
+					</aside>
+				</section>
+
+<!-- NOT NECESSARY...
+				<section data-transition="slide">
+					<h2>Do the Testing Two Step</h2>
+					<p class="fragment fade-up">☑️ Authentication<br>
+						Are the folks supposed to have access able to login?</p>
+					<p class="fragment fade-down">☑️ Resource Access<br/>
+						Can you access the resources you pay for?</p>
+					<aside class="notes">
+						Notes:
+					</aside>
+				</section>
+-->
+				<!-- ----------------------------------------------------
+				SECTION - ADVANCED CONFIGURATION TOPICS
+				---------------------------------------------------- -->
+
+				<section>
+					<h1>ADVANCED TOPICS</h1>
+					<small>Resource Groups, Reporting, Statistics</small>
+				</section>
+
+				<section data-transition="slide">
+					<h2>Groups</h2>
+					<p>Fine-Grained Authentication & Authorization</p>
+
+					<pre>
+						<code class="hljs" data-line-numbers="2,4,6">
+If auth:value eq "Student"; Group Main;
+If auth:value eq "Law Student"; Group Main+Law;
+If auth:value eq "Medical Student"; Group Main+Medical;
+If auth:value eq "Alumni"; Group Alum;
+If auth:value eq "Faculty"; Group Main+Law+Medical+Alum;
+
+						</code>
+					</pre>
+					<aside class="notes">
+						Notes:
+					</aside>
+				</section>
+
+				<!-- ----------------------------------------------------
+				SECTION - STATISTICS
+				---------------------------------------------------- -->
+
+				<section data-transition="slide">
+					<h2>AWstats</h2>
+					<small>Advanced Web Statistics</small>
+					<p class="fragment fade-up">open source log analysis tool</p>
+					<aside class="notes">
+						Notes:
+					</aside>
+				</section>
+
+				<section data-transition="slide">
+					<h2>what it is not</h2>
+					<p class="fragment fade-up">An absolute source of truth</p>
+					<p class="fragment fade-down">Use for trends</p>
+					<aside class="notes">
+						Notes:
+					</aside>
+				</section>
+
+				<section data-transition="slide">
+					<h2>What it can do</h2>
+					<p class="fragment fade-left">Dates and times users are online</p>
+					<p class="fragment fade-right">Unique vs. returning users</p>
+					<p class="fragment fade-up">Top downloaded articles</p>
+					<p class="fragment fade-down">Usage by provider (requires some Excel work)</p>
+					<p class="fragment fade-up">Insight into technology needs</p>
+					<aside class="notes">
+						Notes:
+					</aside>
+				</section>
+
+				<section data-transition="slide">
+					<h2>Explore AWSTATS</h2>
+					<p>Guided walk through the user interface</p>
+					<p><a href="http://proxystats.ohionet.org/awstats/awstats.pl?config=forward.marian.edu">example</a></p>
+					<aside class="notes">
+						Notes:
+					</aside>
+				</section>
+
+				<section data-transition="slide">
+					<h2>Implementing additional tools</h2>
+					<p class="fragment fade-up">ezPAARSE/ezMETRICS</p>
+					<p class="fragment fade-up">We are providing raw audit log data for local processing</p>
+					<aside class="notes">
+						Notes:
+					</aside>
+				</section>
+
+
+				<!-- ----------------------------------------------------
+				SECTION - WRAP UP
+				---------------------------------------------------- -->
+
+				<section data-transition="slide">
+					<h2>Costs</h2>
+					<p class="fragment fade-up">$1300 for service, billed annually.</p>
+					<p class="fragment fade-up">Waived: Initial one-time setup fee PALNI</p>
+					<p class="fragment fade-up">Includes: Hosting, Monitoring, Upgrades, Server Maintenance, SSL certificate</p>
+					<aside class="notes">
+						Notes:
+					</aside>
+				</section>
+
+<!-- NOT NECESSARY
+				<section data-transition="slide">
+					<h2>Future</h2>
+					<p class="fragment fade-up">proxy status for palni proxies</p>
+					<a href="https://status.opal-libraries.org/">example</a>
+					<aside class="notes">
+						Speaker Notes:
+					</aside>
+				</section>
+-->
+
+				<section data-transition="slide">
+					<h2>Contact - Q&A</h2>
+					<br/>
+					<p>Derek Zoladz, MLIS :: Library Systems Analyst</p>
+					<p>email: <strong>derekz@ohionet.org<strong</p>
+					<a><a href="https://www.ohionet.org/contact">https://www.ohionet.org/contact</a></p>
+					<aside class="notes">
+						Notes:
+					</aside>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				hash: true,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/highlight/highlight.js' },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
